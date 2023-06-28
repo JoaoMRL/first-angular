@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-angular';
+  name = 'Joao';
+  dis = false;
+
+  changeName(){
+    this.name = "DIO!";
+    console.log(this.name);
+    return;
+  };
+  toggleDisplay(){
+    this.dis = !this.dis
+  }
 }
