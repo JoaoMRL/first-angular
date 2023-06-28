@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./boucle.component.css']
 })
 export class BoucleComponent {
+  
 
 }
