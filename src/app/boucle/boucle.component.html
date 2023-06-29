@@ -1,5 +1,11 @@
 <p>boucle works!</p>
 
-<div>
-    <p *ngFor="let item of tab">{{item}}</p>
+<div >
+    <ul *ngFor="let item of tab">
+        <li>{{item}}</li>
+    </ul>
+
+    <button (click)="addItem('Quelque Chose')">Add QQ Chose</button>
+    <button (click)="addItem('I am ...')">Who is there ?</button>
+    <button (click)="addItem('DIO')">It's ..</button>
 </div>

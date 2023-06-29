@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class BoucleComponent {
   tab =["Joao","Jean",'Jojo',"Juan"]
 
+  addItem($item:string){
+    this.tab.push($item);
+  }
 }
