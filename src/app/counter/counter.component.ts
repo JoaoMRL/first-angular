@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class CounterComponent {
   count = 0;
   increment(){
-    this.count +=1;
+    this.count ++;
   }
   decrement(){
-    this.count -=1;
+    this.count --;
   }
 }
