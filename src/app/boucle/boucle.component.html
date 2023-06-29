@@ -1,8 +1,8 @@
-<p>boucle works!</p>
+<h2>Boucle Component</h2>
 
 <div >
-    <ul *ngFor="let item of tab">
-        <li>{{item}}</li>
+    <ul >
+        <li *ngFor="let item of tab">{{item}} <app-counter></app-counter> </li>
     </ul>
 
     <button (click)="addItem('Quelque Chose')">Add QQ Chose</button>
