@@ -1,11 +1,18 @@
-<p>room-list works!</p>
-<div>
-    <!--<p *ngFor="let item of room" [ngStyle]="{'color':item.opened? 'green':'red'}"> -->
-    <p *ngFor="let item of room" class="opened" [ngClass]="{'closed':!item.opened}">
-        {{item.name}} is {{item.surface}}m²,
-         his id is {{item.id}}
-         <span *ngIf="item.opened">
-            has a window opened
-         </span>
-    </p>
-</div>
+<main>
+    <div class="griddy">
+        <label for="">Numéro de la pièce</label>
+        <input type="text" [(ngModel)]="nRoom.id">
+        <label for="">Nom de la pièce</label>
+        <input type="text" [(ngModel)]="nRoom.name">
+        <label for="">Surface de la pièce en m²</label>
+        <input type="number" [(ngModel)]="nRoom.surface">
+        <div>
+            <label for="">Porte de la pièce ouverte ou fermer ?</label>
+            <input type="checkbox" [(ngModel)]="nRoom.opened">
+        </div>
+        <button (click)="newRoom()">Add Room</button>
+    </div>
+
+    <div class="flexboxs"><app-room-item [room]="item" *ngFor="let item of list"></app-room-item></div>
+
+</main>

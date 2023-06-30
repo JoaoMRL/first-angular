@@ -1,0 +1,12 @@
+.opened{
+    color:green;
+
+}
+.opened.closed{
+    color: red;
+}
+div{
+    border: 1px solid black;
+    padding: 5%;
+    display: grid;
+}

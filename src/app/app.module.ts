@@ -9,6 +9,8 @@ import { CalculComponent } from './calcul/calcul.component';
 import { FirstComponent } from './first/first.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RoomListComponent } from './room-list/room-list.component';
+import { RoomItemComponent } from './room-item/room-item.component';
+import { WithParmaComponent } from './with-parma/with-parma.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RoomListComponent } from './room-list/room-list.component';
     CounterComponent,
     CalculComponent,
     FirstComponent,
-    RoomListComponent
+    RoomListComponent,
+    RoomItemComponent,
+    WithParmaComponent
   ],
   imports: [
     BrowserModule,

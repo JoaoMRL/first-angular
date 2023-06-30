@@ -1,7 +1,13 @@
-.opened{
-    color:green;
-
+div.flexboxs{
+    display: flex;
 }
-.opened.closed{
-    color: red;
+div.griddy{
+    display: grid;
+    margin-bottom: 5px;
+}
+div.griddy label{
+    margin-top: 5px;
+}
+div.griddy button{
+    margin-top:5px;
 }

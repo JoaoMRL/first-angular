@@ -1,0 +1,12 @@
+<div>
+    <!--<p *ngFor="let item of room" [ngStyle]="{'color':item.opened? 'green':'red'}"> -->
+    <p class="opened" [ngClass]="{'closed':!room.opened}">
+        {{room.name}} is {{room.surface}}m²,
+         his id is {{room.id}}
+         <!--
+         <span *ngIf="room.opened">
+            has a window opened
+         </span>-->
+    </p>
+    <button (click)="doorBool()">Fermer/Ouvir</button>
+</div>
