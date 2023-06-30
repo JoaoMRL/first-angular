@@ -1,0 +1,7 @@
+.opened{
+    color:green;
+
+}
+.opened.closed{
+    color: red;
+}

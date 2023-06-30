@@ -1,6 +1,7 @@
 <p>room-list works!</p>
 <div>
-    <p *ngFor="let item of room" [ngStyle]="{'color':item.opened? 'green':'red'}">
+    <!--<p *ngFor="let item of room" [ngStyle]="{'color':item.opened? 'green':'red'}"> -->
+    <p *ngFor="let item of room" class="opened" [ngClass]="{'closed':!item.opened}">
         {{item.name}} is {{item.surface}}m²,
          his id is {{item.id}}
          <span *ngIf="item.opened">
