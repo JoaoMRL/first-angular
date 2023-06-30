@@ -13,6 +13,6 @@
         <button (click)="newRoom()">Add Room</button>
     </div>
 
-    <div class="flexboxs"><app-room-item [room]="item" *ngFor="let item of list"></app-room-item></div>
-
+    <div class="flexboxs"><app-room-item [room]="item" (delete)="deleteRoom(item)" *ngFor="let item of list"></app-room-item></div>
+   
 </main>

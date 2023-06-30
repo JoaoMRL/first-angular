@@ -16,4 +16,7 @@ export class RoomListComponent {
   newRoom(){
     this.list.push({...this.nRoom});
   }
+  deleteRoom(room:Room){
+    this.list=this.list.filter(item => item !=room);
+  }
 }
