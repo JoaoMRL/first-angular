@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CalculComponent } from './calcul/calcul.component';
 import { FirstComponent } from './first/first.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RoomListComponent } from './room-list/room-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     BoucleComponent,
     CounterComponent,
     CalculComponent,
-    FirstComponent
+    FirstComponent,
+    RoomListComponent
   ],
   imports: [
     BrowserModule,
