@@ -14,6 +14,6 @@ export class RoomListComponent {
   ];
   nRoom:Room ={id:0,name:'',surface:0,opened:false};
   newRoom(){
-    this.list.push(this.nRoom);
+    this.list.push({...this.nRoom});
   }
 }
