@@ -1,0 +1,10 @@
+button.good{
+    color:green;
+
+}
+button.wrong{
+    color: red;
+}
+button{
+    color: black;
+}

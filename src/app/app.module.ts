@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RoomListComponent } from './room-list/room-list.component';
 import { RoomItemComponent } from './room-item/room-item.component';
 import { WithParmaComponent } from './with-parma/with-parma.component';
+import { QuizzComponent } from './quizz/quizz.component';
+import { QuizzItemComponent } from './quizz-item/quizz-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { WithParmaComponent } from './with-parma/with-parma.component';
     FirstComponent,
     RoomListComponent,
     RoomItemComponent,
-    WithParmaComponent
+    WithParmaComponent,
+    QuizzComponent,
+    QuizzItemComponent
   ],
   imports: [
     BrowserModule,

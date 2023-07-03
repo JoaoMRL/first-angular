@@ -1,0 +1,9 @@
+<main>
+    <div>
+       <h2>Votre score est de : {{score}}</h2> 
+    </div>
+    <div *ngFor="let item of Questions" >
+        <app-quizz-item [question]="item" (goodAnswer)="upScore()"></app-quizz-item>
+    </div>
+
+</main>
