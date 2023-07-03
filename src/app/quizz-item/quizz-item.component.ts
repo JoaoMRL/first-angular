@@ -11,15 +11,16 @@ export class QuizzItemComponent {
   question:Quizz;
   @Output()
   goodAnswer= new EventEmitter();
-  msg:string='';
-  qStatus:string;
+  qStatus:string='';
   
   chooseAnswer(index:number){
-    if (index === this.question.answer) {
-      this.goodAnswer.emit();
-      this.qStatus="true";
-    }else{
-      this.qStatus="false";
+    if (this.qStatus =='') {
+      if (index === this.question.answer) {
+        this.goodAnswer.emit();
+        this.qStatus="true";
+      }else{
+        this.qStatus="false";
+      }
     }
   }
 }

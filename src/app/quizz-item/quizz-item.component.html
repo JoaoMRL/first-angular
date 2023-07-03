@@ -1,3 +1,2 @@
 <h3> {{question.question}} </h3>
 <button class=" " [ngClass]="{'wrong':qStatus=='false', 'good':qStatus=='true'}"*ngFor="let item of question.options;let index = index " (click)="chooseAnswer(index)"  > {{item}}</button>
-<span>{{msg}}</span>
