@@ -2,8 +2,10 @@
     <div>
        <h2>Votre score est de : {{score}}</h2> 
     </div>
-    <div *ngFor="let item of Questions" >
-        <app-quizz-item [question]="item" (goodAnswer)="upScore()"></app-quizz-item>
+    <div *ngFor="let item of Questions; let index = index" >
+        <app-quizz-item [question]="item" (choose)="nextQ()" (goodAnswer)="upScore()" *ngIf="current==index"></app-quizz-item>
     </div>
-
+    <p *ngIf="current >= Questions.length"> End of quizz
+        <button (click)="reset()">Again</button>
+    </p>
 </main>

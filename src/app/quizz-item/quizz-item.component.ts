@@ -11,6 +11,8 @@ export class QuizzItemComponent {
   question:Quizz;
   @Output()
   goodAnswer= new EventEmitter();
+  @Output()
+  choose= new EventEmitter();
   qStatus:string='';
   
   chooseAnswer(index:number){
@@ -21,6 +23,7 @@ export class QuizzItemComponent {
       }else{
         this.qStatus="false";
       }
+      this.choose.emit();
     }
   }
 }

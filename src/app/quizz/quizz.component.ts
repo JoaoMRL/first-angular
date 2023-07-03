@@ -8,6 +8,7 @@ import { Quizz } from '../entities';
 })
 export class QuizzComponent {
   score:number=0;
+  current:number=0;
   Questions:Quizz[]=[
     {question:"Les dinosaures existent il encore de nos jours ?",options:['oui','non'],answer:0},
     {question:"Quel est l'animal terrestre le plus grand au monde ?",options:['Elephant','Giraffe','Baleine Bleu','Boa Constrictor'],answer:0},
@@ -17,5 +18,12 @@ export class QuizzComponent {
   
   upScore(){
     this.score++;
+  }
+  nextQ(){
+    this.current++;
+  }
+  reset(){
+    this.score=0
+    this.current=0
   }
 }
